@@ -1,0 +1,15 @@
+# DocFX build output
+/_site/
+# If you ever export PDFs alongside the site
+/_site_pdf/
+
+# .NET build artifacts (if any samples/tools are here)
+bin/
+obj/
+
+# VS Code
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
