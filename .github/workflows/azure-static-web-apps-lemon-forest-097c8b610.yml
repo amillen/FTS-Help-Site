@@ -9,42 +9,32 @@ on:
 
 jobs:
   build_and_deploy_job:
-    # build/deploy on push and on PR open/sync/reopen
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: windows-latest   # DocFX v2 is easiest on Windows (Chocolatey)
+    runs-on: windows-latest
     name: Build and Deploy Job
     permissions:
       contents: read
-
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
 
-      # Install DocFX v2
       - name: Install DocFX
         run: choco install docfx -y
 
-      # Build your DocFX site (outputs to _site per your docfx.json)
       - name: Build DocFX
         run: docfx docfx.json
 
-      # Deploy the prebuilt _site folder to Azure Static Web Apps
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_FOREST_097C8B610 }}
           action: upload
-		  ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          # When skip_app_build=true, app_location is the *built* output
-          app_location: _site     # <- the built DocFX output 
-          output_location: ''     # <- empty when skipping the build
+          app_location: _site
+          output_location: ''
           skip_app_build: true
-		  ###### End of Repository/Build Configurations ######
 
-  # tear down SWA preview env when PR is closed
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
