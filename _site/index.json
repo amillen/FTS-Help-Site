@@ -1,4 +1,19 @@
 {
+  "CONTRIBUTING.html": {
+    "href": "CONTRIBUTING.html",
+    "title": "Contributing | Future Tool Systems",
+    "summary": "Contributing Thanks for helping improve the docs! How to propose changes Fork the repo Create a feature branch (git checkout -b feature/topic) Make edits (Markdown, YAML, code samples) Build locally: docfx docfx.json and verify _site Open a Pull Request to main Style Prefer clear, concise language. Use fenced code blocks with language tag. Cross-link using DocFX xref where helpful. PR checks CI must pass (DocFX build)."
+  },
+  "LICENSE.html": {
+    "href": "LICENSE.html",
+    "title": "| Future Tool Systems",
+    "summary": "MIT License Copyright (c) 2025 Alex Millen Permission is hereby granted, free of charge, to any person obtaining a copy"
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "Docs (DocFX) | Future Tool Systems",
+    "summary": "Docs (DocFX) Documentation site built with [DocFX]. Contributions welcome via pull requests! Build locally Install DocFX (Windows): Via Chocolatey: choco install docfx -y Build: docfx docfx.json Serve locally: docfx serve _site Contributing See CONTRIBUTING.md."
+  },
   "docs/AccessControl/add.html": {
     "href": "docs/AccessControl/add.html",
     "title": "Adding/Creating/Setting Up an Access Control Rule | Future Tool Systems",

@@ -7,6 +7,9 @@
           "**/*.{md,yml}"
         ],
         "exclude": [
+          ".github/**",
+          ".vscode/**",
+          "obj/**",
           "_site/**"
         ]
       }
@@ -29,7 +32,12 @@
       "_appFaviconPath": "images/favicon.ico",
       "_appLogoPath": "images/FutureToolsLogoSawFTSblue.svg",
       "_enableSearch": true,
-      "pdf": true
+      "pdf": true,
+      "gitContribute": {
+        "repo": "https://github.com/amillen/FTS-Help-Site",
+        "branch": "main",
+        "path": "/"
+      }
     }
   }
 }
