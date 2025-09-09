@@ -2,57 +2,56 @@ name: Azure Static Web Apps CI/CD
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
     types: [opened, synchronize, reopened, closed]
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build_and_deploy_job:
+    # build/deploy on push and on PR open/sync/reopen
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: ubuntu-latest
+    runs-on: windows-latest   # DocFX v2 is easiest on Windows (Chocolatey)
     name: Build and Deploy Job
     permissions:
-       id-token: write
-       contents: read
+      contents: read
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
-      - name: Install OIDC Client from Core Package
-        run: npm install @actions/core@1.6.0 @actions/http-client
-      - name: Get Id Token
-        uses: actions/github-script@v6
-        id: idtoken
-        with:
-           script: |
-               const coredemo = require('@actions/core')
-               return await coredemo.getIDToken()
-           result-encoding: string
-      - name: Build And Deploy
-        id: builddeploy
+
+      # Install DocFX v2
+      - name: Install DocFX
+        run: choco install docfx -y
+
+      # Build your DocFX site (outputs to _site per your docfx.json)
+      - name: Build DocFX
+        run: docfx docfx.json
+
+      # Deploy the prebuilt _site folder to Azure Static Web Apps
+      - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_FOREST_097C8B610 }}
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
+          action: upload
+		  ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "_app" # Built app content directory - optional
-          github_id_token: ${{ steps.idtoken.outputs.result }}
-          ###### End of Repository/Build Configurations ######
+          # When skip_app_build=true, app_location is the *built* output
+          app_location: _site     # <- the built DocFX output 
+          output_location: ''     # <- empty when skipping the build
+          skip_app_build: true
+		  ###### End of Repository/Build Configurations ######
 
+  # tear down SWA preview env when PR is closed
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
       - name: Close Pull Request
-        id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          action: "close"
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_FOREST_097C8B610 }}
+          action: close
