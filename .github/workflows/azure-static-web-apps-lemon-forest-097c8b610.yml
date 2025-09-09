@@ -22,8 +22,16 @@ jobs:
       - name: Install DocFX
         run: choco install docfx -y
 
-      - name: Build DocFX
-        run: docfx docfx.json
+      - name: Build DocFX (to _site) + verify
+        shell: pwsh
+        run: |
+          docfx --version
+          docfx build docfx.json -o _site
+          if (-not (Test-Path "_site")) { throw "DocFX did not produce _site" }
+          if (-not (Test-Path "_site/index.html")) {
+            Get-ChildItem -Recurse -Force | Out-String | Write-Output
+            throw "No index.html in _site (DocFX build likely failed)"
+          }
 
       # hand off the built site to the Linux deploy job
       - name: Upload built site
