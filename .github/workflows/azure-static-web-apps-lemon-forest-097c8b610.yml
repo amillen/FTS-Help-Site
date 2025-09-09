@@ -56,7 +56,7 @@ jobs:
       - name: "Gaurd: token exists"
         run: |
           if [ -z "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" ]; then
-            echo "Missing AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_FOREST_097C8B610 secret"
+            echo "Missing AZURE_STATIC_WEB_APPS_API_TOKEN secret"
             exit 1
           fi
 
