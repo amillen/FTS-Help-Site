@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adding/Creating/Setting Up an Automatic Purchase Order | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adding/Creating/Setting Up an Automatic Purchase Order | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="purchase-orders.add-auto">
+<h1 id="creating-an-automatic-purchase-order-auto-po">Creating an Automatic Purchase Order (Auto PO)</h1>
+
+<p><strong>Also known as:</strong> <em>Add Automatic PO</em>, <em>Scheduled PO</em>, <em>Auto Order</em></p>
+<p>An <strong>Automatic Purchase Order</strong> runs based on min/max rules or schedules. It is sent directly to the supplier without manual review.</p>
+<hr>
+<h2 id="steps-to-create-an-automatic-po">Steps to Create an Automatic PO</h2>
+<ol>
+<li>Navigate to the <strong>Purchase Orders</strong> module from the <a class="xref" href="../Dashboard/index.html">Dashboard</a>.</li>
+<li>Click on <strong>Create Auto PO</strong>.</li>
+<li>Fill in the header details:
+<ul>
+<li><a class="xref" href="../Suppliers/index.html">Supplier</a> (the vendor you are ordering from).</li>
+<li><strong>Station</strong> (choose All Stations or a single station).</li>
+<li><strong>Delivery Date</strong> (optional expected delivery date).</li>
+<li><strong>Reference Number</strong> (optional).</li>
+</ul>
+</li>
+<li>Select items for the PO:
+<ul>
+<li>The system will suggest items based on <strong>Min/Max levels</strong>.</li>
+<li>You can review, add, or remove items as needed.</li>
+</ul>
+</li>
+<li>Confirm and save the PO.</li>
+<li>The system automatically transmits the order to the supplier (if electronic ordering is enabled).</li>
+</ol>
+<hr>
+<h2 id="after-saving">After Saving</h2>
+<ul>
+<li>The PO is immediately active and typically sent to the supplier.</li>
+<li>Employees can track the order in the Purchase Orders list.</li>
+<li>No approval step is required.</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="whats-the-difference-between-automatic-and-unapproved-pos">What’s the difference between Automatic and Unapproved POs?</h3>
+<ul>
+<li><strong>Automatic PO</strong>: Sent directly to the supplier with no manual approval.</li>
+<li><strong>Unapproved PO</strong>: Created automatically but requires manual approval before sending.</li>
+</ul>
+<h3 id="can-i-edit-items-in-an-auto-po-before-sending">Can I edit items in an Auto PO before sending?</h3>
+<p>Yes. Before saving, you can add or remove items. After saving, the PO is locked once transmitted.</p>
+<h3 id="can-i-run-auto-pos-for-one-station-only">Can I run Auto POs for one station only?</h3>
+<p>Yes. Select the station instead of All Stations.</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="index.html">Purchase Orders Overview</a></li>
+<li><a class="xref" href="add-manual.html">Creating a Manual PO</a></li>
+<li><a class="xref" href="add-unapproved.html">Creating an Unapproved PO</a></li>
+<li><a class="xref" href="export.html">Exporting a PO</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

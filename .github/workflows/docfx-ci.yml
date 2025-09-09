@@ -1,0 +1,27 @@
+name: DocFX CI
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Install DocFX v2 via Chocolatey (works well on Windows runner)
+      - name: Install DocFX
+        run: choco install docfx -y
+
+      - name: Build DocFX
+        run: docfx docfx.json
+
+      # Keep build as an artifact so reviewers can preview
+      - name: Upload _site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docfx-site
+          path: _site

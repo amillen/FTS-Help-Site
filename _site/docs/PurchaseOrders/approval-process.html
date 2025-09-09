@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Purchase Order Approval Process/PO Approvals | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Purchase Order Approval Process/PO Approvals | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="purchase-orders.approval-process">
+<h1 id="purchase-order-approval-process">Purchase Order Approval Process</h1>
+
+<p><strong>Also known as:</strong> <em>PO Approvals</em>, <em>Approval Chain</em>, <em>Approval Workflow</em></p>
+<p>The <strong>Purchase Order Approval Process</strong> ensures that certain POs are reviewed and approved before being sent to suppliers. This is most commonly used for <strong>Unapproved POs</strong>, but can also apply when company policy requires oversight based on spend or item type.</p>
+<hr>
+<h2 id="how-approvals-work-in-pos">How Approvals Work in POs</h2>
+<ol>
+<li>A purchase order is created.
+<ul>
+<li>If the supplier has an <strong>Approval Process workflow</strong>, the PO cannot be marked <strong>Approved</strong> until the full workflow is complete.</li>
+<li>This is different from creating a draft PO by unchecking the <strong>Approved</strong> box. Draft POs are simply incomplete orders and are not tied to the approval workflow.</li>
+</ul>
+</li>
+<li>If the workflow applies, the PO is marked <strong>Pending Approval</strong>.</li>
+<li>Approvers are notified by email and inside FTS.</li>
+<li>Each approver reviews the PO:
+<ul>
+<li>Approve (moves to the next approver or to supplier if final).</li>
+<li>Reject (sends the PO back to the creator).</li>
+<li>Add notes or comments to explain decisions.</li>
+</ul>
+</li>
+<li>Once the final approver approves, the PO is considered <strong>Approved</strong> and ready to send to the supplier.</li>
+</ol>
+<hr>
+<h2 id="approval-chains">Approval Chains</h2>
+<ul>
+<li>You can configure multiple approvers in a <strong>chain</strong>.</li>
+<li>Each approver must approve in order before the PO is sent.</li>
+<li>Approvers can have <strong>spending limits</strong>, so higher-value POs require additional sign-off.</li>
+<li>If an approver rejects a PO, it stops the approval process until corrected.</li>
+</ul>
+<hr>
+<h2 id="spending-limits">Spending Limits</h2>
+<ul>
+<li>Each approver can have a <strong>dollar threshold</strong>.</li>
+<li>If the PO amount is below the threshold, that approver can finalize it.</li>
+<li>If the PO amount is above the threshold, it moves on to the next approver in the chain.</li>
+</ul>
+<hr>
+<h2 id="notifications">Notifications</h2>
+<ul>
+<li>Approvers are automatically notified when a PO needs their approval.</li>
+<li>Creators are notified once the PO is approved, rejected, or expired.</li>
+<li>Approval requests can be <strong>resent</strong> if an approver does not respond.</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-happens-if-a-po-is-not-approved-in-time">What happens if a PO is not approved in time?</h3>
+<p>It expires and no order is sent to the supplier.</p>
+<h3 id="can-i-have-multiple-approvers-for-the-same-po">Can I have multiple approvers for the same PO?</h3>
+<p>Yes. Approval chains allow multiple approvers in sequence.</p>
+<h3 id="can-i-set-spending-limits">Can I set spending limits?</h3>
+<p>Yes. Approvers can have dollar thresholds. If a PO exceeds their limit, it moves to the next approver.</p>
+<h3 id="can-i-resend-an-approval-request">Can I resend an approval request?</h3>
+<p>Yes. Approval requests can be resent if an approver does not act.</p>
+<h3 id="can-approvers-add-notes">Can approvers add notes?</h3>
+<p>Yes. Approvers can include notes or comments when approving or rejecting a PO.</p>
+<h3 id="whats-the-difference-between-an-unapproved-po-and-a-draft-po">What’s the difference between an unapproved PO and a draft PO?</h3>
+<ul>
+<li><strong>Unapproved PO</strong>: A system-created PO type that requires approval before sending. If not approved in time, it expires.</li>
+<li><strong>Draft PO (unchecking Approved box)</strong>: A PO that has not yet been finalized by the creator. It is not part of the approval workflow and simply sits in draft until marked Approved.</li>
+</ul>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="index.html">Purchase Orders Overview</a></li>
+<li><a class="xref" href="add-unapproved.html">Creating an Unapproved PO</a></li>
+<li><a class="xref" href="add-manual.html">Creating a Manual PO</a></li>
+<li><a class="xref" href="add-auto.html">Creating an Automatic PO</a></li>
+<li><a class="xref" href="export.html">Exporting a PO</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

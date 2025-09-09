@@ -1,0 +1,565 @@
+{
+  "source_base_path": "C:/Users/alex.millen/source/repos/FTS_Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/AccessControl/add.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/AccessControl/add.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/AccessControl/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/AccessControl/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/Locations/additional-tabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/Locations/additional-tabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/Locations/cabinet-builder.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/Locations/cabinet-builder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/Locations/cabinet-location-import.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/Locations/cabinet-location-import.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/Locations/create-a-location.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/Locations/create-a-location.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/Locations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/Locations/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/adding-a-cabinet.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/adding-a-cabinet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/cabinet-types.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/cabinet-types.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Cabinets/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Cabinets/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Categories/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Categories/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Dashboard/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Dashboard/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Employees/add.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Employees/add.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Employees/additional-tabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Employees/additional-tabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Employees/import.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Employees/import.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Employees/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Employees/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Gaging/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Gaging/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Items/add.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Items/add.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Items/additional-tabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Items/additional-tabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Items/assembly.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Items/assembly.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Items/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Items/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Items/unit-info.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Items/unit-info.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/PurchaseOrders/add-auto.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/PurchaseOrders/add-auto.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/PurchaseOrders/add-manual.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/PurchaseOrders/add-manual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/PurchaseOrders/add-unapproved.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/PurchaseOrders/add-unapproved.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/PurchaseOrders/approval-process.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/PurchaseOrders/approval-process.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/PurchaseOrders/export.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/PurchaseOrders/export.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/PurchaseOrders/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/PurchaseOrders/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Reference/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Reference/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Reference/transactions.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Reference/transactions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ReportingFields/adding-a-reporting-field.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ReportingFields/adding-a-reporting-field.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ReportingFields/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ReportingFields/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/ReportingFields/reporting-field-import.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ReportingFields/reporting-field-import.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Reports/custom.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Reports/custom.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Reports/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Reports/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Reports/manual.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Reports/manual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Reports/scheduled.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Reports/scheduled.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Stations/adding-a-station.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Stations/adding-a-station.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Stations/additional-tabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Stations/additional-tabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Stations/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Stations/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Suppliers/adding-a-supplier.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Suppliers/adding-a-supplier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Suppliers/additional-tabs.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Suppliers/additional-tabs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Suppliers/automatic-purchase-orders.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Suppliers/automatic-purchase-orders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Suppliers/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Suppliers/features.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Suppliers/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Suppliers/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Suppliers/po-approval-process.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Suppliers/po-approval-process.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/walkthrough.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/walkthrough.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/FutureToolsLogoSawFTSblue.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/FutureToolsLogoSawFTSblue.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

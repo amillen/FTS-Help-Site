@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adding/Creating/Setting Up an Access Control Rule | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adding/Creating/Setting Up an Access Control Rule | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="access-controls.add">
+<h1 id="creating-a-new-access-control-rule-adding-a-rule">Creating a New Access Control Rule (Adding a Rule)</h1>
+
+<p><strong>Also known as:</strong> <em>Add Access Rule</em>, <em>New Restriction</em>, <em>Set Up Access Control</em></p>
+<p>To create a new access control rule:</p>
+<ol>
+<li>Navigate to the <strong>Access Control</strong> module from the <a class="xref" href="../Dashboard/index.html">Dashboard</a>.</li>
+<li>Click on <strong>Add New Rule</strong>.</li>
+<li>Choose a <strong>Rule Type</strong> (see below).</li>
+<li>Configure the rule details.</li>
+<li>Select which employees the rule applies to (or does not apply to).</li>
+<li>Save the rule.</li>
+</ol>
+<hr>
+<h2 id="rule-types">Rule Types</h2>
+<h3 id="item-rule">Item Rule</h3>
+<p>Restricts use of a specific item.</p>
+<ul>
+<li>Can limit how many times it can be issued.</li>
+<li>Can set a time window (e.g., 1 per day, 3 per week).</li>
+<li>Example: Safety glasses limited to <strong>1 pair per employee per week</strong>.</li>
+</ul>
+<h3 id="drawer-rule">Drawer Rule</h3>
+<p>Restricts access to a cabinet drawer.</p>
+<ul>
+<li>Example: Only supervisors can access Drawer 4 in Cabinet A.</li>
+</ul>
+<h3 id="cabinet-rule">Cabinet Rule</h3>
+<p>Restricts access to an entire cabinet.</p>
+<ul>
+<li>Example: Block employees in the Milling department from accessing the Lathe cabinet.</li>
+</ul>
+<h3 id="station-rule">Station Rule</h3>
+<p>Restricts access to all cabinets within a station.</p>
+<ul>
+<li>Example: Limit certain employees to the “Maintenance” station only.</li>
+</ul>
+<h3 id="issue-other-item-rule">Issue Other Item Rule</h3>
+<p>Requires employees to issue one item before another.</p>
+<ul>
+<li>Example: Employees must issue “Old Inserts” before they can issue “New Inserts.”</li>
+</ul>
+<hr>
+<h2 id="employee-scope">Employee Scope</h2>
+<p>When creating a rule, you can specify:</p>
+<ul>
+<li><strong>Applies To</strong>: Employees who the rule affects.</li>
+<li><strong>Does Not Apply To</strong>: Employees who are exempt.</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> Use this to apply rules to departments, roles, or individuals.</p>
+</blockquote>
+<hr>
+<h2 id="audit-logs">Audit Logs</h2>
+<p>All rule changes are recorded in the <a class="xref" href="index.html">Audit Logs tab</a>.</p>
+<ul>
+<li>Shows who created, edited, or deleted a rule.</li>
+<li>Provides accountability and traceability.</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="can-i-restrict-an-item-to-supervisors-only">Can I restrict an item to supervisors only?</h3>
+<p>Yes. Create an <strong>Item Rule</strong> and set the <strong>Does Not Apply To</strong> list to include only supervisors.</p>
+<h3 id="how-do-i-limit-frequency-of-issuing-an-item">How do I limit frequency of issuing an item?</h3>
+<p>Use an <strong>Item Rule</strong> with <strong>Time Options</strong> (e.g., max 1 issue per week).</p>
+<h3 id="can-i-block-an-entire-cabinet">Can I block an entire cabinet?</h3>
+<p>Yes. Use a <strong>Cabinet Rule</strong> to restrict access to the whole cabinet.</p>
+<h3 id="whats-the-difference-between-drawer-and-cabinet-rules">What’s the difference between Drawer and Cabinet rules?</h3>
+<ul>
+<li><strong>Drawer Rule</strong> = restricts a single drawer.</li>
+<li><strong>Cabinet Rule</strong> = restricts every drawer in the cabinet.</li>
+</ul>
+<h3 id="can-i-use-issue-other-item-for-safety-stock-rotation">Can I use Issue Other Item for safety stock rotation?</h3>
+<p>Yes. For example, require employees to issue “Old Stock” before they can issue “New Stock.”</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="index.html">Access Control Overview</a></li>
+<li><a class="xref" href="../Employees/index.html">Employees</a></li>
+<li><a class="xref" href="../Items/index.html">Items</a></li>
+<li><a class="xref" href="../Stations/index.html">Stations</a></li>
+<li><a class="xref" href="../Cabinets/index.html">Cabinets</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

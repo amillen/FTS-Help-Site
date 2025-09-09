@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adding/Creating/Setting Up Automatic Purchase Orders | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adding/Creating/Setting Up Automatic Purchase Orders | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="suppliers.auto-purchase-orders">
+<h1 id="automatic-purchase-orders">Automatic Purchase Orders</h1>
+
+<p>To schedule automatic purchase orders (or related supplier reports), configure the options below and apply the selected report. These settings are available when <a class="xref" href="adding-a-supplier.html">creating or editing a supplier</a> under the <strong>Automated PO</strong> tab.</p>
+<p><strong>Also known as:</strong> <em>Automated POs</em>, <em>Scheduled PO emails</em>, <em>Supplier auto-order schedule</em></p>
+<blockquote>
+<p>See also: <a class="xref" href="index.html">Suppliers</a> · <a class="xref" href="adding-a-supplier.html">Adding a Supplier</a> · <a class="xref" href="features.html">Supplier Features and Settings</a></p>
+</blockquote>
+<hr>
+<h2 id="1-select-report-type">1) Select Report Type</h2>
+<p>Use the <strong>Report Type</strong> picker to choose what will be generated/sent for this supplier.</p>
+<h3 id="available-report-types">Available Report Types</h3>
+<ul>
+<li><strong>Purchase Order</strong>: Creates and sends an order to the supplier based on inventory levels.</li>
+<li><strong>Open Purchase Order – Report</strong>: Lists all open (not yet received) purchase orders.</li>
+<li><strong>Reorder Report</strong>: Shows items that are low or out of stock and need to be reordered based on the <strong>Purchase Method</strong> selected below. This has the same items and quantities as a <strong>Purchase Order</strong> but does not create a PO in the system.</li>
+<li><strong>Unapproved Purchase Order</strong>: Generates a PO that must be approved before being sent to the supplier. This is great for managers who want to review orders before they are placed.</li>
+<li><strong>Calibration Order</strong>: Creates an order for tools/gages that need calibration.</li>
+<li><strong>Calibration Order Report</strong>: A report showing which tools/gages require calibration and their status.  This is the same as a <strong>Calibration Order</strong> but does not create one in the system.</li>
+</ul>
+<hr>
+<h2 id="2-purchase-method">2) Purchase Method</h2>
+<p>Choose the <strong>Method</strong> used when an automated PO/report is generated.</p>
+<ul>
+<li><strong>At or Below Min</strong>: Runs the Purchase Order (PO) only if the total inventory is at or below the item's Min level.</li>
+<li><strong>Below Max</strong>: Runs the Purchase Order (PO) only if the total inventory is below the item's Max level.</li>
+</ul>
+<hr>
+<h2 id="3-schedule-days-to-run">3) Schedule: Days to Run</h2>
+<p>Select when the automation should run.</p>
+<ul>
+<li><strong>Monthly</strong>: Runs the report on the 1st of each month.</li>
+<li><strong>All Days</strong>: Runs the report every day of the week.</li>
+<li><strong>Specific Days</strong>: Check individual weekdays as needed.</li>
+</ul>
+<hr>
+<h2 id="4-schedule-time-of-day">4) Schedule: Time of Day</h2>
+<p>Set the run time for the automated PO/report.</p>
+<blockquote>
+<p>Example: 02 : 30 PM</p>
+</blockquote>
+<hr>
+<h2 id="5-recipients">5) Recipients</h2>
+<p><strong>Email Addresses</strong> receives the generated PO/report.</p>
+<blockquote>
+<p>Tip: Separate multiple addresses with commas (e.g., <code>buyer@acme.com, alt@acme.com</code>).</p>
+</blockquote>
+<hr>
+<h2 id="6-report-specific-options">6) Report-Specific Options</h2>
+<p>Different reports expose different extra fields.</p>
+<blockquote>
+<p>Note: <strong>Calibration Orders</strong> and <strong>Calibration Order Reports</strong> are only available if your environment is configured for gaging and the supplier has calibrator enabled.</p>
+</blockquote>
+<h3 id="purchase-order">Purchase Order</h3>
+<ul>
+<li><strong>Minimum Order Amount ($)</strong>: Only generate a PO when this amount is met.</li>
+</ul>
+<h3 id="unapproved-purchase-order">Unapproved Purchase Order</h3>
+<ul>
+<li><strong>Expiration Days</strong>: If an <strong>Unapproved PO</strong> is not approved within this many days, it will be canceled.</li>
+</ul>
+<h3 id="calibration-order--calibration-order-report">Calibration Order / Calibration Order Report</h3>
+<ul>
+<li><strong>% of Gage Usage Left</strong>: Set the threshold for when a gage should be calibrated (based on usage vs. allowed uses).</li>
+<li><strong>Number of days until (or within) expiration</strong>: Set how many days before a gage's expiration date it should be included in the order/report.</li>
+</ul>
+<hr>
+<h2 id="7-reference-number-optional">7) Reference Number (Optional)</h2>
+<p><strong>Reference Number</strong>: An optional number you can set to include on the PO when the automated PO/report is generated.</p>
+<blockquote>
+<p><strong>Precedence note:</strong> If the Automated PO <strong>Reference Number</strong> is set here, it <strong>overrides</strong> the Supplier’s <strong>Default Reference Number</strong> when automated POs are created.</p>
+</blockquote>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="can-i-run-the-same-supplier-on-multiple-schedules">Can I run the same supplier on multiple schedules?</h3>
+<p>Yes. Create additional schedules by selecting another report type (or different days of the week), then click <strong>Apply</strong>.</p>
+<h3 id="how-do-i-send-automated-pos-to-multiple-recipients">How do I send automated POs to multiple recipients?</h3>
+<p>Enter multiple addresses in <strong>Email Addresses</strong>, separated by commas.</p>
+<h3 id="do-reference-number-settings-conflict-with-supplier-defaults">Do <strong>Reference Number</strong> settings conflict with supplier defaults?</h3>
+<p>If the automated PO has a <strong>Reference Number</strong> here, it takes precedence over the Supplier’s <strong>Default Reference Number</strong> from <a class="xref" href="features.html">Supplier Features and Settings</a>.</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="adding-a-supplier.html">Adding a Supplier</a></li>
+<li><a class="xref" href="features.html">Supplier Features and Settings</a></li>
+<li><a class="xref" href="index.html">Suppliers (Overview)</a></li>
+<li><a class="xref" href="../PurchaseOrders/index.html">Purchase Orders</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

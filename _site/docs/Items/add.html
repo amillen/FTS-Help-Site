@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adding/Creating/Setting Up an Item | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adding/Creating/Setting Up an Item | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="items.add">
+<h1 id="creating-a-new-item-adding-an-item">Creating a New Item (Adding an Item)</h1>
+
+<p><strong>Also known as:</strong> <em>Add Item</em>, <em>New Item</em>, <em>Set Up Item</em></p>
+<p>To create a new item:</p>
+<ol>
+<li>Navigate to the <strong>Items</strong> module from the <a class="xref" href="../Dashboard/index.html">Dashboard</a>.</li>
+<li>Click on <strong>Add New Item</strong> (or the <strong>plus (+)</strong> button).</li>
+<li>Fill in the item details (see below).</li>
+<li>Click <strong>Save</strong> to create the item.</li>
+</ol>
+<hr>
+<h2 id="item-details">Item Details</h2>
+<h3 id="item-id">Item ID</h3>
+<p>A unique identifier for the item. Must be unique across all items.</p>
+<h3 id="supplier">Supplier</h3>
+<p>The supplier that will receive purchase orders for this item.</p>
+<h3 id="reference-item-id">Reference Item ID</h3>
+<p>Another identifier for the item (often an internal part number).</p>
+<h3 id="barcode">Barcode</h3>
+<p>The item’s barcode data, used when searching with a barcode scanner.</p>
+<h3 id="commodity-code">Commodity Code</h3>
+<p>Code used to group and report spend (often a GL code).</p>
+<blockquote>
+<p><strong>Tip:</strong> Commodity Codes are used for spend reporting. For tracking job/part/cost center data, use <a class="xref" href="../ReportingFields/index.html">Reporting Fields</a>.</p>
+</blockquote>
+<h3 id="minimum-order-quantity">Minimum Order Quantity</h3>
+<p>The minimum number of units that must be ordered before the item appears on a purchase order.</p>
+<h3 id="default-purchase-unit-size">Default Purchase Unit Size</h3>
+<p>Defines multiples in which the item is ordered.</p>
+<h3 id="type">Type</h3>
+<p>Determines how the item behaves in inventory:</p>
+<ul>
+<li><strong>Consumable</strong>: Not expected to be returned.</li>
+<li><strong>Semi-Consumable</strong>: May be reused or scrapped. Enables extra fields: <em>Usage Tracking Enabled</em>, <em>Auto Scrap</em>, <em>Return As Other Item</em>.</li>
+<li><strong>Durable</strong>: Must be returned to remain in inventory.</li>
+<li><strong>Used</strong>: Marks the item as previously used.</li>
+<li><strong>Assembly Kit Enabled</strong>: Turns the item into a kit (sum of other items). Opens the <a class="xref" href="assembly.html">Assembly</a> tab.</li>
+</ul>
+<hr>
+<h2 id="saving-the-item">Saving the Item</h2>
+<p>Once the core details are filled in:</p>
+<ul>
+<li>Click <strong>Save</strong> to create the item.</li>
+<li>Additional tabs will appear (see <a class="xref" href="unit-info.html">Unit Info</a>, <a class="xref" href="additional-tabs.html">Additional Item Tabs</a>, and <a class="xref" href="assembly.html">Assembly</a>).</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="can-an-item-have-more-than-one-id">Can an item have more than one ID?</h3>
+<p>Each item has one <strong>Item ID</strong>, but it may also have a <strong>Reference Item ID</strong> and a <strong>Barcode</strong>.</p>
+<h3 id="whats-the-difference-between-a-commodity-code-and-a-reporting-field">What’s the difference between a Commodity Code and a Reporting Field?</h3>
+<ul>
+<li><strong>Commodity Code</strong> groups spend for reporting by item type or GL code.</li>
+<li><a class="xref" href="../ReportingFields/index.html">Reporting Fields</a> capture additional data at checkout (job, part, cost center).</li>
+</ul>
+<h3 id="why-dont-i-see-the-assembly-tab">Why don’t I see the Assembly tab?</h3>
+<p>The <strong>Assembly Kit Enabled</strong> box must be checked for the Assembly tab to appear.</p>
+<h3 id="do-i-need-to-set-a-minimum-order-quantity">Do I need to set a Minimum Order Quantity?</h3>
+<p>Not always. Use it only if suppliers require minimum purchases.</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="index.html">Items Overview</a></li>
+<li><a class="xref" href="unit-info.html">Unit Info</a></li>
+<li><a class="xref" href="assembly.html">Assembly Kits</a></li>
+<li><a class="xref" href="additional-tabs.html">Additional Item Tabs</a></li>
+<li><a class="xref" href="../Suppliers/index.html">Suppliers</a></li>
+<li><a class="xref" href="../Categories/index.html">Categories</a></li>
+<li><a class="xref" href="../ReportingFields/index.html">Reporting Fields</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

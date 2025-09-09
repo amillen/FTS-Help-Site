@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adding/Creating/Setting Up a Station | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adding/Creating/Setting Up a Station | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="stations.add">
+<h1 id="creating-a-new-station-adding-a-station">Creating a New Station (Adding a Station)</h1>
+
+<p><strong>Also known as:</strong> <em>Create Station</em>, <em>New Station</em>, <em>Add Station</em></p>
+<p>To add a new station to the FTS system, follow these steps:</p>
+<ol>
+<li>Navigate to the <strong>Stations</strong> module from the <a class="xref" href="../Dashboard/index.html">Dashboard</a>.</li>
+<li>Click on the <strong>Create New Station</strong> link.</li>
+<li>Fill in the station details:
+<ul>
+<li><strong>Station ID</strong> (short code, best ≤ 6 characters)</li>
+<li><strong>Description</strong> (clear name, e.g., Milling Dept., HQ-CA)</li>
+<li><strong>Notification Email(s)</strong> (comma-separated addresses for alerts)</li>
+<li><strong>Address</strong> (physical location)</li>
+<li><strong>Number of Days Until AutoScrap</strong></li>
+<li><strong>Send Undo Notification Email</strong> (checkbox if you want undone transactions sent to the notification emails)</li>
+</ul>
+</li>
+<li>Click <strong>Save</strong> to add the station to the system.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Stations group <a class="xref" href="../Cabinets/index.html">Cabinets</a> so you can organize your shop (by area or department) and manage purchasing/visibility separately.</p>
+</blockquote>
+<blockquote>
+<p>See also: <a class="xref" href="index.html">Stations (Overview)</a> · <a class="xref" href="../Items/index.html">Items (Item Types)</a></p>
+</blockquote>
+<hr>
+<h2 id="required-fields">Required Fields</h2>
+<h3 id="station-id">Station ID</h3>
+<p>A short, unique code for the station.</p>
+<ul>
+<li><strong>Best practice:</strong> Keep it <strong>6 characters or fewer</strong> (e.g., <code>ST01</code>, <code>MILLA</code>).</li>
+<li>Used in reports, purchase orders, and quick identification.</li>
+</ul>
+<h3 id="description">Description</h3>
+<p>A clear, unambiguous description of the station.</p>
+<ul>
+<li>Examples: <em>Headquarters – California</em>, <em>Milling Department</em>, <em>Station 03 – Colorado</em>.</li>
+</ul>
+<hr>
+<h2 id="notification--address">Notification &amp; Address</h2>
+<h3 id="notification-email">Notification Email</h3>
+<p>The email address(es) that receive station alerts.</p>
+<ul>
+<li>Enter one or more addresses, <strong>comma-separated</strong> (e.g., <code>lead@shop.com, manager@shop.com</code>).</li>
+<li>Alerts may include:
+<ul>
+<li>Location alerts</li>
+<li>Gaging/calibration notices</li>
+<li><strong>Undone Transactions</strong> (if the checkbox below is enabled)</li>
+<li><strong>Supplier Reference Number expired</strong> notices</li>
+</ul>
+</li>
+</ul>
+<h3 id="address">Address</h3>
+<p>The physical address for this station (used on documents and for reference).</p>
+<hr>
+<h2 id="station-rules--options">Station Rules &amp; Options</h2>
+<h3 id="number-of-days-until-autoscrap">Number of Days Until AutoScrap</h3>
+<p>Number of days until <strong>semi-consumable</strong> items are automatically scrapped at this station.</p>
+<ul>
+<li>Set based on your shop policy and <strong>item type</strong> rules (see <a class="xref" href="../Items/index.html">Items</a>).</li>
+<li>Example: If set to <strong>30</strong>, <strong>semi-consumable</strong> items at this station will auto-scrap after 30 days.</li>
+</ul>
+<h3 id="send-undo-notification-email">Send Undo Notification Email</h3>
+<p>If checked, <strong>Undone Transaction</strong> alerts are sent to the <strong>Notification Email</strong> list above.</p>
+<ul>
+<li>Useful if you want supervisors alerted whenever a transaction is undone, so they can verify inventory accuracy.</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-is-a-station">What is a Station?</h3>
+<p>A Station is a way to group cabinets together.<br>
+Stations can represent physical locations (like California, Nevada, Colorado) or areas inside a shop (like Milling, Deburr, Maintenance).<br>
+They help organize cabinets, control purchasing, and limit visibility for users.</p>
+<h3 id="whats-a-good-station-id">What’s a good Station ID?</h3>
+<p>Keep it short and readable (≤ 6 characters). Examples: <code>ST01</code>, <code>MILL</code>, <code>DEBURR</code>, <code>HQ-CA</code>.</p>
+<h3 id="can-i-add-multiple-notification-emails">Can I add multiple Notification Emails?</h3>
+<p>Yes. Separate each address with a comma: <code>user1@shop.com, user2@shop.com</code>.</p>
+<h3 id="what-gets-included-in-undone-transaction-emails">What gets included in Undone Transaction emails?</h3>
+<p>A brief note that a transaction was undone, including the basic who/what/when details.</p>
+<h3 id="how-do-autoscrap-days-relate-to-item-types">How do AutoScrap days relate to item types?</h3>
+<p>AutoScrap applies to <strong>semi-consumable</strong> item types that are configured for scrapping. Set the days here, and ensure item types are configured correctly under <a class="xref" href="../Items/index.html">Items</a>.</p>
+<h3 id="how-do-i-save-a-new-station">How do I save a new station?</h3>
+<p>After entering the required details, click <strong>Save</strong>. The station will be added and available for use immediately.</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="index.html">Stations/Station Groups</a></li>
+<li><a class="xref" href="../Items/index.html">Items (Item Types)</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

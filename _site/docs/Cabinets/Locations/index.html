@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Locations/Bins | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Locations/Bins | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../../images/favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="cabinets.locations">
+<h1 id="locations">Locations</h1>
+
+<p>A <strong>Location</strong> (sometimes called a <em>bin</em>) is the smallest unit of storage inside a cabinet. Every item in FTS must be assigned to a location so its quantity, min/max levels, and activity can be tracked.</p>
+<p>Locations are defined in a <strong>grid pattern</strong> inside each cabinet — made up of drawers, columns, and rows (similar to Excel).</p>
+<p><strong>Also known as:</strong> <em>Bins</em>, <em>Cabinet Locations</em>, <em>Storage Locations</em></p>
+<hr>
+<h2 id="why-locations-matter">Why Locations Matter</h2>
+<ul>
+<li><strong>Inventory Tracking</strong>: Each location holds the current quantity of its assigned item.</li>
+<li><strong>Purchasing Control</strong>: Min/Max values on a location determine when items are re-ordered.</li>
+<li><strong>Flexibility</strong>: Locations can be created manually, in bulk with Cabinet Builder, or with a spreadsheet import.</li>
+<li><strong>Accuracy</strong>: Keeping item assignments and counts tied to locations ensures clean reporting and auditing.</li>
+<li><strong>Mobility</strong>: Items can be moved between locations when needed, and all of their data (open POs, transactions, on-hand quantities, alerts, etc.) moves with them.</li>
+</ul>
+<hr>
+<h2 id="methods-to-create-locations">Methods to Create Locations</h2>
+<p>There are three ways to create locations inside a cabinet. Each method is best for a different situation.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Best For</th>
+<th>How It Works</th>
+<th>Example Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="create-a-location.html">Create a New Location</a></td>
+<td>One-off, single locations</td>
+<td>Manually add a single location by selecting drawer, column, row, and optional item details.</td>
+<td>You need to add a new location in drawer 3, row 5, column B.</td>
+</tr>
+<tr>
+<td><a class="xref" href="cabinet-builder.html">Cabinet Builder</a></td>
+<td>Building many empty locations quickly</td>
+<td>Select drawers, rows, and columns to auto-generate multiple locations at once.</td>
+<td>You’re setting up a new cabinet with 10 drawers, each with 6 columns and 5 rows.</td>
+</tr>
+<tr>
+<td><a class="xref" href="cabinet-location-import.html">Location Import</a></td>
+<td>Assigning items or updating many locations</td>
+<td>Fill out an Excel template with locations, items, Min/Max, Capacity, etc., then upload it.</td>
+<td>You want to update 200 locations to assign items and adjust Min/Max values.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="quick-recommendations">Quick Recommendations</h2>
+<ul>
+<li>Use <strong>Create a New Location</strong> for <em>one location at a time</em>.</li>
+<li>Use <strong>Cabinet Builder</strong> for <em>bulk creation of empty grids</em>.</li>
+<li>Use <strong>Location Import</strong> for <em>bulk updates or assigning items to many locations</em>.</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-is-a-location">What is a location?</h3>
+<p>A location (or bin) is a storage spot inside a cabinet, defined by drawer, column, and row.</p>
+<h3 id="do-items-have-to-be-assigned-to-a-location">Do items have to be assigned to a location?</h3>
+<p>Yes. Every item must be tied to a location so the system can track quantities and purchasing rules.</p>
+<h3 id="can-i-move-items-between-locations">Can I move items between locations?</h3>
+<p>Yes. Items can be moved to a new location using the <strong>Move</strong> link. When an item is moved (or swapped), all of its associated data — including open purchase orders, transactions, on-hand quantities, unreturned inventory, alerts, and min/max settings — moves with it.</p>
+<h3 id="which-method-should-i-use-to-create-locations">Which method should I use to create locations?</h3>
+<ul>
+<li><strong>Few locations</strong> → Create a New Location</li>
+<li><strong>Lots of locations</strong> (rows/columns) → Cabinet Builder</li>
+<li><strong>Lots of items or updates</strong> → Location Import</li>
+</ul>
+<h3 id="can-a-location-hold-more-than-one-item">Can a location hold more than one item?</h3>
+<p>Yes, if <strong>Location Expansion</strong> is enabled.</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="../index.html">Cabinets (Overview)</a></li>
+<li><a class="xref" href="../adding-a-cabinet.html">Creating a New Cabinet</a></li>
+<li><a class="xref" href="create-a-location.html">Creating a New Location</a></li>
+<li><a class="xref" href="cabinet-builder.html">Cabinet Builder</a></li>
+<li><a class="xref" href="cabinet-location-import.html">Location Import</a></li>
+<li><a class="xref" href="../../Items/index.html">Items</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

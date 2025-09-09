@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Importing/Uploading/Updating Reporting Field Data | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Importing/Uploading/Updating Reporting Field Data | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="reporting-fields.import">
+<h1 id="importing-data-into-a-reporting-field">Importing Data into a Reporting Field</h1>
+
+<p><strong>Also known as:</strong> <em>Upload Reporting Field Data</em>, <em>Import Dropdown Values</em></p>
+<p>The <strong>Import Tool</strong> lets you load many dropdown options into a reporting field at once using an Excel template.</p>
+<blockquote>
+<p><strong>Tip:</strong> Importing is the fastest way to populate large dropdown lists (e.g., job numbers, part numbers).</p>
+</blockquote>
+<hr>
+<h2 id="steps-to-import">Steps to Import</h2>
+<ol>
+<li>Navigate to the <strong>Reporting Fields</strong> module from the <a class="xref" href="../Dashboard/index.html">Dashboard</a>.</li>
+<li>Select the reporting field you want to import data into.</li>
+<li>Click the <strong>cloud upload button</strong>.</li>
+<li>Download the <strong>Import Template</strong> (Excel).
+<ul>
+<li>Blank template for new data.</li>
+<li>Sample template for reference (delete sample data before using).</li>
+</ul>
+</li>
+<li>Fill out the template with your data list.</li>
+<li>Save the file and upload it using <strong>Choose File → Open</strong>.</li>
+<li>Select whether to <strong>Append</strong> (add new data to the list) or <strong>Replace</strong> (clear and replace all data).</li>
+<li>Click <strong>Import</strong> to load the data.</li>
+</ol>
+<hr>
+<h2 id="error-handling">Error Handling</h2>
+<ul>
+<li><strong>Duplicates</strong>: If duplicate values exist, import will fail until fixed. Remove duplicates in the file or cancel them in the upload list.</li>
+<li><strong>Replace Warning</strong>: If you choose Replace, you must confirm before existing data is cleared.</li>
+<li><strong>Import Failed</strong>: If issues remain, you’ll see a failure screen. Repair the file and re-upload.</li>
+</ul>
+<hr>
+<h2 id="at-checkout">At Checkout</h2>
+<ul>
+<li>If the field has a dropdown list, users will see only those options.</li>
+<li>If <strong>Allow User Input</strong> is enabled, users can either pick from the list or type a new value.</li>
+<li>If disabled, they must select from the list only.</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="can-i-import-into-multiple-reporting-fields-at-once">Can I import into multiple reporting fields at once?</h3>
+<p>No. Imports are done one field at a time.</p>
+<h3 id="whats-the-difference-between-append-and-replace">What’s the difference between Append and Replace?</h3>
+<ul>
+<li><strong>Append</strong> keeps existing values and adds new ones.</li>
+<li><strong>Replace</strong> deletes all current values and loads only the new list.</li>
+</ul>
+<h3 id="what-happens-if-i-forget-to-delete-the-sample-data">What happens if I forget to delete the sample data?</h3>
+<p>It will be imported into your list unless removed before upload.</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="index.html">Reporting Fields Overview</a></li>
+<li><a class="xref" href="adding-a-reporting-field.html">Creating a New Reporting Field</a></li>
+<li><a class="xref" href="../Items/index.html">Items</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

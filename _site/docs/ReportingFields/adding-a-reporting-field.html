@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Adding/Creating/Setting Up a Reporting Field | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Adding/Creating/Setting Up a Reporting Field | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="reporting-fields.add">
+<h1 id="creating-a-new-reporting-field-adding-a-reporting-field">Creating a New Reporting Field (Adding a Reporting Field)</h1>
+
+<p><strong>Also known as:</strong> <em>Add Reporting Field</em>, <em>New Reporting Field</em>, <em>Custom Field</em></p>
+<p>To create a new reporting field:</p>
+<ol>
+<li>Navigate to the <strong>Reporting Fields</strong> module from the <a class="xref" href="../Dashboard/index.html">Dashboard</a>.</li>
+<li>Click on <strong>Add New Reporting Field</strong>.</li>
+<li>Fill in the reporting field details:
+<ul>
+<li><p><strong>Name</strong>: The field label (e.g., Part Number, Job Number).</p>
+</li>
+<li><p><strong>Required</strong>: Must be filled out before checkout is allowed.</p>
+</li>
+<li><p><strong>Allow User Input</strong>: Lets users type or scan data at checkout. If unchecked, users must choose from a dropdown.</p>
+</li>
+<li><p><strong>Restrict User Input</strong>: Allows users to type into this field, but only accepts values that already exist in the preloaded list.</p>
+<ul>
+<li>Useful when there are many possible values and you want to prevent mistakes.</li>
+<li>Works well with barcode scanners — users can scan a valid value instead of typing it.</li>
+</ul>
+</li>
+<li><p><strong>Enable</strong>: Activates or deactivates the field at checkout.</p>
+</li>
+<li><p><strong>View Order</strong>: Sets the order in which fields appear at the kiosk. Lower numbers show first.</p>
+</li>
+<li><p><strong>Character Min</strong>: Minimum number of characters the user must enter if typing.</p>
+</li>
+<li><p><strong>Character Max</strong>: Maximum number of characters the user can enter if typing.</p>
+</li>
+</ul>
+</li>
+<li>Click <strong>Add Reporting Field</strong>.</li>
+</ol>
+<hr>
+<h2 id="after-creating-a-field">After Creating a Field</h2>
+<ul>
+<li>Use the <strong>Settings</strong> button to adjust requirements.</li>
+<li>Add data options by either:
+<ul>
+<li>Typing and clicking the <strong>+</strong> button (adds a single value).</li>
+<li>Uploading a list (see <a class="xref" href="reporting-field-import.html">Importing Data</a>).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="what-happens-if-a-field-is-required">What happens if a field is required?</h3>
+<p>Users cannot complete checkout unless they provide a value for that field.</p>
+<h3 id="can-i-change-a-fields-name-later">Can I change a field’s name later?</h3>
+<p>Yes. The field name can be edited from the Settings screen.</p>
+<h3 id="can-i-deactivate-a-field-without-deleting-it">Can I deactivate a field without deleting it?</h3>
+<p>Yes. Uncheck <strong>Enable</strong> to disable the field at checkout.</p>
+<h3 id="what-is-view-order">What is View Order?</h3>
+<p>It controls the order in which reporting fields are shown at the kiosk. For example, a field with <strong>View Order = 1</strong> will appear above a field with <strong>View Order = 2</strong>.</p>
+<h3 id="what-are-character-min-and-max">What are Character Min and Max?</h3>
+<ul>
+<li><strong>Character Min</strong>: The minimum number of characters a user must enter.</li>
+<li><strong>Character Max</strong>: The maximum number of characters a user is allowed to enter.<br>
+These settings only apply if <strong>Allow User Input</strong> is enabled.</li>
+</ul>
+<h3 id="what-does-restrict-user-input-mean">What does Restrict User Input mean?</h3>
+<p>This setting lets users type into the field, but only accepts values that already exist in the preloaded list.</p>
+<ul>
+<li>Helps prevent typos or invalid entries.</li>
+<li>Often paired with barcode scanners so users can scan valid values directly.</li>
+</ul>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="index.html">Reporting Fields Overview</a></li>
+<li><a class="xref" href="reporting-field-import.html">Importing Data into a Reporting Field</a></li>
+<li><a class="xref" href="../Items/index.html">Items</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

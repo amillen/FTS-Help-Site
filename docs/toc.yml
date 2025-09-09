@@ -1,0 +1,113 @@
+# This is an automatically generated file
+- name: Docs
+  href: index.md
+- name: Getting Started
+  href: getting-started.md
+- name: Walkthrough
+  href: walkthrough.md
+- name: Access Control
+  href: AccessControl/index.md
+  items:
+  - name: Creating a New Access Control Rule Adding a Rule
+    href: AccessControl/add.md
+- name: Cabinets
+  href: Cabinets/index.md
+  items:
+  - name: Cabinet Types
+    href: Cabinets/cabinet-types.md
+  - name: Creating a New Cabinet Adding a Cabinet
+    href: Cabinets/adding-a-cabinet.md
+  - name: Locations
+    href: Cabinets/Locations/index.md
+    items:
+    - name: Additional Location Tabs
+      href: Cabinets/Locations/additional-tabs.md
+    - name: Creating a New Location Adding a Location
+      href: Cabinets/Locations/create-a-location.md
+    - name: Creating Multiple Locations with Cabinet Builder Cabinet Builder Tool
+      href: Cabinets/Locations/cabinet-builder.md
+    - name: Mass Importing and Updating Locations Location Import Tool
+      href: Cabinets/Locations/cabinet-location-import.md
+- name: Categories
+  href: Categories/index.md
+  items:
+- name: Dashboard
+  href: Dashboard/index.md
+  items:
+- name: Employees
+  href: Employees/index.md
+  items:
+  - name: Additional Employee Tabs
+    href: Employees/additional-tabs.md
+  - name: Creating a New Employee Adding an Employee
+    href: Employees/add.md
+  - name: Importing Employees Employee Import Tool
+    href: Employees/import.md
+- name: Gaging
+  href: Gaging/index.md
+  items:
+- name: Items
+  href: Items/index.md
+  items:
+  - name: Additional Item Tabs
+    href: Items/additional-tabs.md
+  - name: Assembly Kits
+    href: Items/assembly.md
+  - name: Creating a New Item Adding an Item
+    href: Items/add.md
+  - name: Unit Info Units of Measure
+    href: Items/unit-info.md
+- name: Purchase Orders POs
+  href: PurchaseOrders/index.md
+  items:
+  - name: Creating a Manual Purchase Order Adding a PO
+    href: PurchaseOrders/add-manual.md
+  - name: Creating an Automatic Purchase Order Auto PO
+    href: PurchaseOrders/add-auto.md
+  - name: Creating an Unapproved Purchase Order Unapproved PO
+    href: PurchaseOrders/add-unapproved.md
+  - name: Exporting Purchase Orders
+    href: PurchaseOrders/export.md
+  - name: Purchase Order Approval Process
+    href: PurchaseOrders/approval-process.md
+- name: Reference
+  href: Reference/index.md
+  items:
+  - name: Transactions
+    href: Reference/transactions.md
+- name: Reporting Fields
+  href: ReportingFields/index.md
+  items:
+  - name: Creating a New Reporting Field Adding a Reporting Field
+    href: ReportingFields/adding-a-reporting-field.md
+  - name: Importing Data into a Reporting Field
+    href: ReportingFields/reporting-field-import.md
+- name: Reports
+  href: Reports/index.md
+  items:
+  - name: Creating a Custom Report
+    href: Reports/custom.md
+  - name: Running a Manual Report
+    href: Reports/manual.md
+  - name: Scheduling a Report
+    href: Reports/scheduled.md
+- name: Stations
+  href: Stations/index.md
+  items:
+  - name: Additional Station Tabs
+    href: Stations/additional-tabs.md
+  - name: Creating a New Station
+    href: Stations/adding-a-station.md
+- name: Suppliers
+  href: Suppliers/index.md
+  items:
+  - name: Additional Supplier Tabs
+    href: Suppliers/additional-tabs.md
+  - name: Automatic Purchase Orders
+    href: Suppliers/automatic-purchase-orders.md
+  - name: Creating a New Supplier
+    href: Suppliers/adding-a-supplier.md
+  - name: Supplier Features and Settings
+    href: Suppliers/features.md
+  - name: Supplier Purchase Order Approval Process
+    href: Suppliers/po-approval-process.md

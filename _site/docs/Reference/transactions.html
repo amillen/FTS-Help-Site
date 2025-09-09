@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Transactions/Transaction Records | Future Tool Systems </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Transactions/Transaction Records | Future Tool Systems ">
+      
+      
+      <link rel="icon" href="../../images/favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/FutureToolsLogoSawFTSblue.svg" alt="Future Tool Systems">
+            Future Tool Systems
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="transactions">
+<h1 id="transactions">Transactions</h1>
+
+<p><strong>Also known as:</strong> <em>Activity Records</em>, <em>Inventory Movements</em></p>
+<p>A <strong>Transaction</strong> is recorded any time an item’s quantity changes in FTS. Transactions provide the history of how, when, and by whom items were used, returned, adjusted, or restocked.</p>
+<hr>
+<h2 id="what-creates-a-transaction">What Creates a Transaction?</h2>
+<p>Any action that increases or decreases an item’s stock creates a transaction:</p>
+<ul>
+<li><strong>Issue</strong>: Item checked out by an employee.</li>
+<li><strong>Return</strong>: Item returned (Semi-Consumable or Durable).</li>
+<li><strong>Adjust</strong>: Consumable item added back into stock if unused.</li>
+<li><strong>Restock</strong>: Item received into inventory from a purchase order.</li>
+<li><strong>Auto Scrap</strong>: Semi-Consumable item automatically scrapped after expiration.</li>
+<li><strong>Move</strong>: Item moved from one location to another.</li>
+</ul>
+<hr>
+<h2 id="where-transactions-are-used">Where Transactions Are Used</h2>
+<ul>
+<li><strong>History Tabs</strong>: Found in <a class="xref" href="../Items/additional-tabs.html">Items</a>, <a class="xref" href="../Stations/additional-tabs.html">Stations</a>, <a class="xref" href="../Cabinets/Locations/additional-tabs.html">Locations</a>, and <a class="xref" href="../Employees/additional-tabs.html">Employees</a>. Each history tab displays the transactions for that record.</li>
+<li><strong>Reports</strong>: Transactions are the foundation of many reports, including Transaction Report, Usage Per Month, and Unreturned Inventory.</li>
+<li><strong>Audit and Compliance</strong>: Transactions provide a complete audit trail of all inventory activity.</li>
+</ul>
+<hr>
+<h2 id="example-transaction-record">Example Transaction Record</h2>
+<ul>
+<li>Date/Time</li>
+<li>Employee</li>
+<li>Item ID and Description</li>
+<li>Station / Cabinet / Location</li>
+<li>Action (Issue, Return, Adjust, Restock, Scrap, Move)</li>
+<li>Quantity Change</li>
+<li>Notes (if provided)</li>
+</ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<h3 id="whats-the-difference-between-a-transaction-and-an-audit-log">What’s the difference between a Transaction and an Audit Log?</h3>
+<ul>
+<li><strong>Transaction</strong>: Records item quantity changes (e.g., issue, return, restock).</li>
+<li><strong>Audit Log</strong>: Records <em>system changes</em> to item or supplier settings (e.g., Min/Max changed, email updated).</li>
+</ul>
+<h3 id="where-can-i-see-all-transactions">Where can I see all Transactions?</h3>
+<p>Use the <strong>Reports</strong> module and run a <strong>Transaction Report</strong>.</p>
+<h3 id="do-all-inventory-actions-create-a-transaction">Do all inventory actions create a transaction?</h3>
+<p>Yes. Any action that changes item stock creates a transaction.</p>
+<hr>
+<h2 id="related-topics">Related Topics</h2>
+<ul>
+<li><a class="xref" href="../Items/index.html">Items</a></li>
+<li><a class="xref" href="../Stations/index.html">Stations</a></li>
+<li><a class="xref" href="../Cabinets/Locations/index.html">Locations</a></li>
+<li><a class="xref" href="../Employees/index.html">Employees</a></li>
+<li><a class="xref" href="../Reports/index.html">Reports</a></li>
+<li><a class="xref" href="../Items/additional-tabs.html">Audit Logs</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
