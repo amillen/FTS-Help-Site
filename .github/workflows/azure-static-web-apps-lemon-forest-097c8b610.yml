@@ -41,6 +41,8 @@ jobs:
           output_location: ""
           skip_app_build: true
           production_branch: "main"
+          deployment_environment: "production"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
 
   close_pr_env:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
