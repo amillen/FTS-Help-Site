@@ -8,74 +8,46 @@ on:
     branches: [ main ]
 
 jobs:
-  build_docfx:
-    runs-on: windows-latest
-    name: Build DocFX
-    permissions:
-      contents: read
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy to Azure Static Web Apps
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
         with:
-          submodules: true
-          lfs: false
+          dotnet-version: '9.0.x'
 
-      - name: Install DocFX
-        run: choco install docfx -y
+      - name: Install DocFX 2.78.3
+        run: dotnet tool update -g docfx --version 2.78.3
 
-      - name: Build DocFX (to _site) + verify
-        shell: pwsh
-        run: |
-          docfx --version
-          docfx build docfx.json -o _site
-          if (-not (Test-Path "_site")) { throw "DocFX did not produce _site" }
-          if (-not (Test-Path "_site/index.html")) {
-            Get-ChildItem -Recurse -Force | Out-String | Write-Output
-            throw "No index.html in _site (DocFX build likely failed)"
-          }
+      - name: Add dotnet tools to PATH
+        run: echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
 
-      # hand off the built site to the Linux deploy job
-      - name: Upload built site
-        uses: actions/upload-artifact@v4
-        with:
-          name: docfx-site
-          path: _site
+      - name: Build DocFX to _site
+        run: docfx build docfx.json -o _site
 
-  deploy_swa:
-    # deploy on push, and on PR open/sync/reopen
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    needs: build_docfx
-    runs-on: ubuntu-latest
-    name: Deploy to Azure Static Web Apps
-    steps:
-      - name: Download built site
-        uses: actions/download-artifact@v4
-        with:
-          name: docfx-site
-          path: docfx-site
+      - name: Verify output
+        run: test -f _site/index.html
 
-      - name: "Gaurd: token exists"
-        run: |
-          if [ -z "${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}" ]; then
-            echo "Missing AZURE_STATIC_WEB_APPS_API_TOKEN secret"
-            exit 1
-          fi
-
-      - name: Deploy
+      - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN  }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "upload"
-          app_location: docfx-site   # prebuilt output from previous job
-          output_location: ""        # empty when skipping build
+          app_location: _site
+          output_location: ""
           skip_app_build: true
+          production_branch: "main"
 
   close_pr_env:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
-    name: Close PR environment
     steps:
-      - name: Close
+      - name: Close PR environment
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN  }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "close"
