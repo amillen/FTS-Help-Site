@@ -22,7 +22,15 @@ To create a new location inside a cabinet, follow these steps:
 ---
 
 ## Location Fields
-*(same as before — Drawer, Column, Row, Item, Min, Max, Capacity, Location Expansion, Restock)*
+- **Drawer**: The drawer number where the location is.
+- **Column**: The column number within the drawer.
+- **Row**: The row number within the drawer.
+- **Item**: (Optional) The item assigned to this location.
+- **Min**: The minimum quantity to keep in stock at this location.
+- **Max**: The maximum quantity to keep in stock at this location.
+- **Capacity**: (Optional) The theoretical maximum number of items that can fit in this location.
+- **Location Expansion**: (Checkbox) If checked multiple items will be allowed in the same drawer, column and row as this location.
+- **Restock**: (Checkbox) If checked, the system will include this location in purchase order or restock reports.
 
 ---
 

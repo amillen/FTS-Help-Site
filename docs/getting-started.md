@@ -1,3 +1,8 @@
+---
+uid: getting-started
+title: Getting Started
+---
+
 # Getting Started
 
 ## Create an Account
