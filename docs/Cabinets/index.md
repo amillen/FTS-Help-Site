@@ -51,5 +51,5 @@ A cabinet can be either **physical** or **virtual**:
 
 ## Related Topics
 - [Stations/Station Groups](xref:stations)
-- [Creating a New Cabinet](xref:cabinets.add) *(if you plan to have a page for this)*  
+- [Creating a New Cabinet](xref:cabinets.add)
 - [Items](xref:items)

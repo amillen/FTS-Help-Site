@@ -1,5 +1,10 @@
+---
+uid: documentation
+title: Documentation
+---
+
 # Docs
 
-* [Getting Started](getting-started.md)
-* [Walkthrough](walkthrough.md)
+* [Getting Started](xref:getting-started)
+* [Walkthrough](xref:walkthrough.intro)
 
