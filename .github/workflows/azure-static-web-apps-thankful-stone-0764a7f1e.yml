@@ -31,8 +31,16 @@ jobs:
       - name: Add dotnet tools to PATH
         run: echo "$HOME/.dotnet/tools" >> "$GITHUB_PATH"
 
+      - name: Install wkhtmltopdf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wkhtmltopdf
+      
       - name: Build DocFX to _site
         run: docfx build docfx.json -o _site
+
+      - name: Build PDF
+        run: docfx pdf docfx.json -o _site
 
       - name: Verify output
         run: test -f _site/index.html
