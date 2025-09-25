@@ -40,7 +40,7 @@ jobs:
         run: docfx build docfx.json -o _site
 
       - name: Build PDF
-        run: docfx pdf docfx.json -o _site
+        run: docfx pdf docfx.json
 
       - name: Verify output
         run: test -f _site/index.html
