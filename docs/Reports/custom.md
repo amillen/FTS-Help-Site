@@ -14,12 +14,11 @@ Custom reports let you tailor data views with filters and saved conditions. This
 ## Steps to Create a Custom Report
 
 1. Navigate to the **Reports** module from the [Dashboard](xref:dashboard).  
-2. Choose **Custom Report**.  
-3. Select your base report type (e.g., Transaction, Inventory Value).  
-4. Apply filters:  
+2. Select your base report type (e.g., Transaction, Inventory Value).  
+3. Apply filters:  
    - Field filters (e.g., by Job, Station, Supplier).  
    - Conditions (equals, does not equal, begins with, contains).  
-5. Save the report for reuse.  
+4. Save the report for reuse.  
 
 ---
 
