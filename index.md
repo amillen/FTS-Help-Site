@@ -4,7 +4,7 @@ _layout: landing
 
 # Future Tool Systems (FTS)
 
-Future Tool Systems (FTS) is the premier inventory management system available today, designed with manufacturers and machine shops in mind. Whether you need to automate the monitoring, controlling, and reordering of thousands of items across multiple locations or dispense a couple of items from a vending machine, FTS can meet your needs. FTS is a web application that can be securely accessed from any device, anywhere in the world, allowing you to view your inventory at any time.
+Future Tool Systems (FTS) is the premier inventory management system available today, designed for manufacturers and machine shops. Whether you need to automate the monitoring, controlling, and reordering of thousands of items across multiple locations or dispense a couple of items from a vending machine, FTS can meet your needs. FTS is a web application that can be securely accessed from any device, anywhere in the world, allowing you to view your inventory at any time.
 
 ---
 
