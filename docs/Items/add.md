@@ -12,7 +12,7 @@ To create a new item:
 1. Navigate to the **Items** module from the [Dashboard](xref:dashboard).  
 2. Click on **Add New Item** (or the **plus (+)** button).  
 3. Fill in the item details (see below).  
-4. Click **Save** to create the item.  
+4. Click **Create Item** to create the item.  
 
 ---
 
