@@ -123,6 +123,6 @@ Displayed as **01-A-01**
 
 - [Items](xref:items)
 - [Cabinets](xref:cabinets)
-- [Locations](xref:locations)
+- [Locations](xref:cabinets.locations)
 - [Creating an Item](xref:items.add)
 - [Gaging](xref:gaging)
