@@ -1,13 +1,9 @@
 ---
 uid: gaging
 title: Gaging
-
-
 ---
 
 # Gaging
-
-
 
 **Gage tracking** (also written **gauge tracking**) is a quality control practice used in manufacturing and operations to **monitor, manage, and ensure the accuracy and reliability of measurement instruments (gages)** over time.
 

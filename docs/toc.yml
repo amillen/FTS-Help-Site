@@ -46,6 +46,22 @@
 - name: Gaging
   href: Gaging/index.md
   items:
+  - name: Create Gage
+    href: Gaging/create-gage.md
+  - name: Physical Gage
+    href: Gaging/physical-gage.md
+  - name: Calibrator
+    href: Gaging/calibrator.md
+  - name: Approved Calibration Order
+    href: Gaging/approved-calibration-order.md
+  - name: Unapproved Calibration Order
+    href: Gaging/unapproved-calibration-order.md
+  - name: Calibration Order Receiving
+    href: Gaging/calibration-order-receiving.md
+  - name: Calibration Gage Picking
+    href: Gaging/calibration-gage-picking.md
+  - name: Assigning Gage Location
+    href: Gaging/assigning-gage-location.md
 - name: Items
   href: Items/index.md
   items:
@@ -57,6 +73,23 @@
     href: Items/add.md
   - name: Unit Info Units of Measure
     href: Items/unit-info.md
+- name: Kiosk
+  href: Kiosk/index.md
+  items:
+  - name: Adjust
+    href: Kiosk/adjust.md
+  - name: Issue
+    href: Kiosk/issue.md
+  - name: Physical
+    href: Kiosk/physical.md
+  - name: PO Receipt
+    href: Kiosk/po-receipt.md
+  - name: Restock
+    href: Kiosk/restock.md
+  - name: Return
+    href: Kiosk/return.md
+  - name: Troubleshooting
+    href: Kiosk/Troubleshooting/index.md
 - name: Purchase Orders POs
   href: PurchaseOrders/index.md
   items:

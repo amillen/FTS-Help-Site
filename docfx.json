@@ -10,7 +10,8 @@
           ".github/**",
           ".vscode/**",
           "obj/**",
-          "_site/**"
+          "_site/**",
+          "xrefmap.yml"
         ]
       }
     ],
@@ -34,11 +35,12 @@
       "_appFooter": "<span>Visit us at <a target='_blank' rel='noopener noreferrer' href='https://ftsware.com/'>ftsware.com</a></span>",
       "_enableSearch": true,
       "pdf": true,
-      "gitContribute": {
+      "_gitContribute": {
         "repo": "https://github.com/amillen/FTS-Help-Site",
         "branch": "main",
         "path": "/"
-      }
+      },
+      "_gitUrlPattern": "github"
     }
   }
 }
