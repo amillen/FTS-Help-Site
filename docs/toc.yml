@@ -28,6 +28,8 @@
       href: Cabinets/Locations/cabinet-builder.md
     - name: Mass Importing and Updating Locations Location Import Tool
       href: Cabinets/Locations/cabinet-location-import.md
+    - name: Adding an Item to a Cabinet
+      href: Cabinets/Locations/adding-item-through-location.md
 - name: Categories
   href: Categories/index.md
   items:
@@ -73,6 +75,13 @@
     href: Items/add.md
   - name: Unit Info Units of Measure
     href: Items/unit-info.md
+  - name: Adding Item to Location
+    href: Items/adding-item-to-location.md
+- name: Installation
+  href: Installation/index.md
+  items:
+  - name: Network Requirements
+    href: Installation/network-requirements.md
 - name: Kiosk
   href: Kiosk/index.md
   items:
