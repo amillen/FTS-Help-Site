@@ -90,6 +90,13 @@
     href: Kiosk/return.md
   - name: Troubleshooting
     href: Kiosk/Troubleshooting/index.md
+    items:
+    - name: Logging off the Kiosk
+      href: Kiosk/Troubleshooting/kiosk-logoff.md
+    - name: Kiosk Modify View
+      href: Kiosk/Troubleshooting/kiosk-modify-view.md
+    - name: Kiosk Wifi
+      href: Kiosk/Troubleshooting/kiosk-wifi.md
 - name: Purchase Orders POs
   href: PurchaseOrders/index.md
   items:
