@@ -34,7 +34,7 @@
       "_appLogoPath": "images/FutureToolsLogoSawFTSblue.svg",
       "_appFooter": "<span>Visit us at <a target='_blank' rel='noopener noreferrer' href='https://ftsware.com/'>ftsware.com</a></span>",
       "_enableSearch": true,
-      "pdf": true,
+      "pdf": false,
       "_gitContribute": {
         "repo": "https://github.com/amillen/FTS-Help-Site",
         "branch": "main",

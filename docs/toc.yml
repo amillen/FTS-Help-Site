@@ -76,7 +76,7 @@
   - name: Unit Info Units of Measure
     href: Items/unit-info.md
   - name: Adding Item to Location
-    href: Items/adding-item-to-location.md
+    href: Items/add-item-to-location.md
 - name: Installation
   href: Installation/index.md
   items:
