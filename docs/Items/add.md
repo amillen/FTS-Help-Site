@@ -22,7 +22,11 @@ To create a new item:
 A unique identifier for the item. Must be unique across all items.  
 
 ### Supplier
-The supplier that will receive purchase orders for this item.  
+The supplier that will receive purchase orders for this 
+item.
+
+### Supplier Item ID
+The supplier item id is a unique identifier for ordering an item from the supplier. 
 
 ### Reference Item ID
 Another identifier for the item (often an internal part number).  
@@ -33,6 +37,11 @@ The item’s barcode data, used when searching with a barcode scanner.
 ### Commodity Code
 Code used to group and report spend (often a GL code).  
 > **Tip:** Commodity Codes are used for spend reporting. For tracking job/part/cost center data, use [Reporting Fields](xref:reporting-fields).
+
+
+### Upload Image
+Uploading an image helps users visually identify a tool on the kiosk.
+> **Tip:** You can add an image URL in the **Thumbnail URL** and **Full Image URL** fields by selecting **Show/Hide Image URLs**. You may also upload a custom image.
 
 ### Minimum Order Quantity
 The minimum number of units that must be ordered before the item appears on a purchase order.  
@@ -73,6 +82,12 @@ The **Assembly Kit Enabled** box must be checked for the Assembly tab to appear.
 ### Do I need to set a Minimum Order Quantity?
 Not always. Use it only if suppliers require minimum purchases.  
 
+### Can I Update or Change Pricing?
+Yes, pricing can be updated at any time. Pricing updates will occur automatically when the **Supplier Item ID** is correctly configured. If you prefer to apply a custom price to an item, simply uncheck the **Unit Price** check box option on that item to prevent automatic updates.
+
+### Can you delete an item from the database?
+Yes, if an item is not in a locaton you can select the item and hit **Delete Item**.  
+
 ---
 
 ## Related Topics
@@ -83,3 +98,4 @@ Not always. Use it only if suppliers require minimum purchases.
 - [Suppliers](xref:suppliers)  
 - [Categories](xref:categories)  
 - [Reporting Fields](xref:reporting-fields)  
+- [Kiosk](xref:kiosk)

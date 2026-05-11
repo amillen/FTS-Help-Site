@@ -29,6 +29,12 @@ The unit most commonly used when ordering from a supplier.
 - Example: A supplier may only sell in **Boxes of 10**.  
 - When creating purchase orders, this unit will be the default.
 
+### Pricing Unit
+The unit is the basic measure to set the price of a product.
+- Example: The pricing unit can be set at the **Each, Box, Case or Package Unit**
+- When issuing or purchasing a tool the price of the tool will be calculaed of this unit.
+
+
 ### Allow Issue
 Determines which units are allowed to be issued at the kiosk.  
 - You may allow multiple units (e.g., Each, Pack, Box).  

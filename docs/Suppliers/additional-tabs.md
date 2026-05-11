@@ -7,6 +7,16 @@ title: Assigned Items/Assigned Gages/Historical Pricing/Audit Log
 
 In addition to the main supplier options, several extra tabs provide related information about suppliers. These tabs are visible when [creating or editing a supplier](xref:suppliers.add).
 
+
+---
+## Automated PO
+To schedule automatic purchase orders and automatic unapproved purchase orders (or related supplier reports). [Setting up Automatic Purchase Orders](xref:suppliers.auto-purchase-orders)
+
+---
+
+### EDI Info
+You configure supplier details to enable electronic data exchange. It allows purchase orders, transactions, and other business documents to be transmitted automatically between FTS and the supplier’s ERP system, ensuring seamless and efficient communication.
+
 ---
 
 ## Assigned Items

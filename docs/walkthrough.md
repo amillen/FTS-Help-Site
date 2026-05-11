@@ -142,6 +142,8 @@ Include screenshots or error messages for faster assistance.
 - Search before contacting your local support team
 - Follow walkthroughs step by step
 
+> All help sections can be downloaded in **PDF Manual** at the bottom of the help site
+
 ---
 
 

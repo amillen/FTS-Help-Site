@@ -17,6 +17,8 @@
     href: Cabinets/cabinet-types.md
   - name: Creating a New Cabinet Adding a Cabinet
     href: Cabinets/adding-a-cabinet.md
+  - name: Cabinet Bin Labels
+    href: Cabinets/bin-labels.md
   - name: Locations
     href: Cabinets/Locations/index.md
     items:
@@ -77,6 +79,10 @@
     href: Items/unit-info.md
   - name: Adding Item to Location
     href: Items/add-item-to-location.md
+  - name: Importing Items
+    href: Items/import-items.md
+  - name: Item Item_id Update
+    href: Items/import-item-id-update.md
 - name: Installation
   href: Installation/index.md
   items:

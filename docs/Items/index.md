@@ -132,6 +132,9 @@ Only **Semi-Consumables**. After a set number of days (configured at the [Statio
 ### Which item types can use Usage Tracking?
 Both **Semi-Consumable** and **Durable** items can have **Usage Tracking Enabled**, so extra details are logged when they are returned.
 
+### Can you edit an item_id?
+Yes you can use the pencil icon next to the **item_id** to edit the current **item_id**. If you would like to edit more than one **item_id** refer to [Update Item IDs Using an Import](xref:items.update-item-ids)
+
 ---
 
 ## Related Topics
