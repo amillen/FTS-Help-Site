@@ -39,10 +39,13 @@ You can search for items in **three ways**:
 2. Once added:
    - The item appears in your cart with the selected quantity
    - A message appears stating *“This item is in your cart”*
+   - You can add multiply items to cart.  ***Like a Shopping List***
 
 To remove an item:
 - Click **Remove** under the item, or
 - Hover over the item image in the cart and remove it there.
+
+  
 
 ---
 

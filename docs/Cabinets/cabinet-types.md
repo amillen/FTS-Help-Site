@@ -37,12 +37,107 @@ A cabinet controlled by the **Matrix** Ethernet controller.
 - Requires a **Device ID** being the IP address of **Matrix** Ethernet controller.  
 - Ensures only authorized users can access the cabinet.
 
+## Option A: 13-Drawer Cabinet
+
+
+### Storage Options
+- **12 Drawers**: 3” high each  
+- **1 Drawer**: 4” high
+
+### Specifications
+- **Electronically Locked Drawers**
+- **Manual Override** in case of power failure
+- **Direct Network Connection**
+- **Single Power Supply**: 110–230V
+- **Cabinet Color**: Black
+- **Width**: 40”
+- **Height**: 48”
+- **Depth**: 28.5”
+- **Maximum Load per Drawer**: Approx. 440 lbs
+
+## Option B: 8-Drawer Cabinet
+
+### Storage Options
+- **3 Drawers**: 4” high each  
+- **4 Drawer**: 5” high
+- **1 Drawer**: 8” high
+
+
+### Specifications
+- **Electronically Locked Drawers**
+- **Manual Override** in case of power failure
+- **Direct Network Connection**
+- **Single Power Supply**: 110–230V
+- **Cabinet Color**: Black
+- **Width**: 40”
+- **Height**: 48”
+- **Depth**: 28.5”
+- **Maximum Load per Drawer**: Approx. 440 lbs
+
+---
+
+
+## Eco Locker
+A cabinet controlled by the **Matrix** Ethernet controller.  
+- Requires a **Device ID** being the IP address of **Matrix** Ethernet controller.  
+- Ensures only authorized users can access the cabinet.
+
+## Option A: 12-Pod Eco Locker (Matrix DLS)
+
+
+### Storage Options
+- **12 -Door lockers are configurable to accommodate larger items
+
+### Specifications
+- **Electronically Locked Drawers**
+- **Manual Override** in case of power failure
+- **Direct Network Connection**
+- **Single Power Supply**: 110–230V
+- **Cabinet Color**: Black
+- **Maximum Load per Pod**: Approx. 75 lbs
+
+## Option B: 21-Pod Eco Locker (Matrix DLS)
+
+### Storage Options
+- **21 -Door lockers are configurable to accommodate larger item
+
+
+### Specifications
+- **Electronically Locked Drawers**
+- **Manual Override** in case of power failure
+- **Direct Network Connection**
+- **Single Power Supply**: 110–230V
+- **Cabinet Color**: Black
+- **Width**: 40”
+- **Height**: 48”
+- **Depth**: 28.5”
+- **Maximum Load per Pod**: Approx. 75 lbs
+
 ---
 
 ## Matrix Adam DLS
 A cabinet controlled by the **Adam** Ethernet controller.  
 - Requires a **Device ID** being the IP address of **Adam** Ethernet controller.  
 - The Matrix Adam DLS has been discontinued, but is still supported. Use the Matrix DLS for new installations.
+
+
+### Storage Options
+- **3 Drawers**: 4” high each  
+- **4 Drawer**: 5” high
+- **1 Drawer**: 8” high
+
+
+### Specifications
+- **Electronically Locked Drawers**
+- **Manual Override** in case of power failure
+- **Direct Network Connection**
+- **Single Power Supply**: 110–230V
+- **Cabinet Color**: Black
+- **Width**: 40”
+- **Height**: 48”
+- **Depth**: 28.5”
+- **Maximum Load per Drawer**: Approx. 440 lbs
+
 
 ---
 
@@ -94,6 +189,7 @@ A small-capacity cabinet controlled by the **Matrix Ethernet controller**.
 - **Electrical supply**:  
   - 110 AC ±10% (4.6 A)  
   - 220 AC ±10% (2.2 A)  
+
 
 ---
 

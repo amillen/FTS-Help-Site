@@ -73,6 +73,16 @@ After applying:
 
 ---
 
+## FAQ
+
+### How do you delete an item from a location?
+- First, remove all quantity of the item from the location.
+- Next, make sure the item is not included on any open purchase orders.
+- Finally, select **Remove** next to the item number at the location.
+
+
+---
+
 ## Related Topics
 
 - [Items](xref:items)

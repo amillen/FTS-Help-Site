@@ -93,6 +93,17 @@ Once complete:
 
 ---
 
+## FAQ
+
+### How do you delete an item from a Cabinet?
+- Select the cabinet location where the item is stored.
+- Remove all quantities of the item from that location.
+- Confirm the item is not included on any open purchase orders.
+- Click **Remove** next to the item number for that location.
+
+
+---
+
 ## Related Topics
 
 - [Items](xref:items)
