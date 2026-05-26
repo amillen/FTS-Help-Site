@@ -72,6 +72,9 @@ Yes. Approvers can include notes or comments when approving or rejecting a PO.
 - **Unapproved PO**: A system-created PO type that requires approval before sending. If not approved in time, it expires.  
 - **Draft PO (unchecking Approved box)**: A PO that has not yet been finalized by the creator. It is not part of the approval workflow and simply sits in draft until marked Approved.
 
+### Can you setup a PO Approval process based on a Station/Cabinet level not a Supplier?
+No. The PO Approval is setup on a the supplier level. 
+
 
 ---
 

@@ -70,6 +70,9 @@ Categories can group items for purchasing convenience, but they are **not used**
 ### Can I use images for categories?
 Yes. You can upload images to categories or subcategories for easier recognition.
 
+### Can I use categories to group tools needed for a specific Job?
+Yes. Categories can be used to group tools needed for a specific job, making it easier to search and locate items on the kiosk. This functions like a virtual tool kit, allowing all required tools for a job to be organized together in one category.
+
 ---
 
 ## Related Topics
