@@ -5,7 +5,7 @@ title: Adding/Creating/Setting Up an Item
 
 # Creating a New Item (Adding an Item)
 
-**Also known as:** *Add Item*, *New Item*, *Set Up Item*
+**Also known as:** *Add Item*, *New Item*, *Set Up Item*, *Add a Part Number*
 
 To create a new item:
 
@@ -87,6 +87,11 @@ Yes, pricing can be updated at any time. Pricing updates will occur automaticall
 
 ### Can you delete an item from the database?
 Yes, if an item is not in a locaton you can select the item and hit **Delete Item**.  
+
+### Can you return a tool as used?
+Yes. When creating the new tool, assign the type as **semi-consumable**. Then create a separate version of the tool and check the **Used** box on its item page. This will allow the new tool to be returned as used.
+
+
 
 ---
 

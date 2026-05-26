@@ -68,7 +68,10 @@ No. Use [Categories](xref:categories) for grouping and searching items. Reportin
 ### Can employees have default reporting field values?
 Yes. Employees can be assigned **default values** for reporting fields so they don’t have to re-enter the same data every time they issue an item.  
 - Commonly used for departments, jobs, or cost centers where the values rarely change.  
-- Defaults are set in the [Employee Tabs](xref:employees.additional-tabs).  
+- Defaults are set in the [Employee Tabs](xref:employees.additional-tabs). 
+
+### Can I use Reporting Fields to customize the kiosk login screen?
+No. Reporting Fields are used during the checkout process, not on the kiosk login screen. They are designed to collect additional data after items have been selected.
 
 ---
 

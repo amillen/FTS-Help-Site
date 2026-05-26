@@ -42,6 +42,8 @@ Restricts access to all cabinets within a station.
 Requires employees to issue one item before another.  
 - Example: Employees must issue “Old Inserts” before they can issue “New Inserts.”  
 
+> **Tip:** This can be used to force the employee to issue a **USED** item before allowing them to get the **BRAND NEW ITEM**
+
 ---
 
 ## Employee Scope

@@ -68,7 +68,7 @@ From the Cabinet List Page, you can:
 
 - Choose which **cabinets are vended or viewable**
 - Configure **reporting fields**
-- Modify the **item display view**
+- Modify the **items Per Page**
 - Set the **hours allowed to adjust items back**
 - Set the **Auto Logout Time**
 - Enable or disable **Birdseye View**
@@ -88,6 +88,13 @@ Always verify that your changes were applied correctly:
 - Ensure the correct cabinets and items are visible
 
 > **Best Practice:** Never leave the kiosk without confirming the changes work as intended.
+
+---
+
+## FAQ
+
+### Can you adjust how many images tiles are displayed on the kiosk?
+Yes. You can customize how many tool images are displayed per page on the kiosk screen. The display can be adjusted to show between 9 and 48 images per page.
 
 ---
 
