@@ -94,6 +94,15 @@ Once created:
 
 ---
 
+---
+## FAQ
+
+### Can you delete a Calibrator?
+Yes. Before deleting a Calibrator, you must first move all associated gages to another Calibrator. Once all gages have been reassigned, you can navigate to the Supplier module and delete the Calibrator.
+
+
+---
+
 ## Related Topics
 
 - [Gaging](xref:gaging) 

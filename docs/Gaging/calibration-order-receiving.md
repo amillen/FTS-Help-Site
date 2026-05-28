@@ -67,6 +67,8 @@ In the dialog:
 - Add notes from the **Inspection Report Findings**
 - Indicate whether the gage **exceeded tolerance**
 
+> ***Tip:*** This will update the calibration date on the gage automatically
+
 ---
 
 ### 6. Set Gage Status

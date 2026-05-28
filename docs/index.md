@@ -7,4 +7,5 @@ title: Documentation
 
 * [Getting Started](xref:getting-started)
 * [Walkthrough](xref:walkthrough.intro)
+* [Grant Access](xref:cloud.access)
 

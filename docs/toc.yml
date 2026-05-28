@@ -3,6 +3,8 @@
   href: index.md
 - name: Getting Started
   href: getting-started.md
+- name: Grant Acceess
+  href: grant-access.md
 - name: Walkthrough
   href: walkthrough.md
 - name: Access Control
@@ -32,8 +34,12 @@
       href: Cabinets/Locations/cabinet-location-import.md
     - name: Adding an Item to a Cabinet
       href: Cabinets/Locations/adding-item-through-location.md
+    - name: Importing Items to Locations
+      href: Cabinets/Locations/importing-items-into-locations.md
 - name: Categories
   href: Categories/index.md
+- name: Importing Categories
+  href: Categories/importing-categories.md  
   items:
 - name: Dashboard
   href: Dashboard/index.md
@@ -83,6 +89,8 @@
     href: Items/import-items.md
   - name: Item Item_id Update
     href: Items/import-item-id-update.md
+  - name: Used Items
+    href: Items/used-items.md
 - name: Installation
   href: Installation/index.md
   items:
