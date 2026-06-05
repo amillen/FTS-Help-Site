@@ -10,6 +10,64 @@ Picking a gage allows users to **remove a gage from active inventory** so it can
 **Also known as:** *Pick Gage*, *Remove Gage for Calibration*
 
 ---
+### Option A: How to Pick a Gage from the Kiosk 
+> ***(Recommended Method)***
+
+### 1. Log In
+
+1. Sign in using the credentials assigned to you.
+2. Enter your information and click **Submit**.
+
+After logging in, you will see the **front page of your site**, where items at your station are displayed.
+
+---
+
+### 2. Open the Restock Module
+1. Click the **Restock** link.
+2. Select **View Calibration Order** appears at the top above the Open Purchase orders.
+3. Locate the correct calibration order.
+4. Click **Select** to open the Calibration OrderReceiving screen.
+
+---
+
+
+### 3. Picking Gages on the Calibration Order
+
+For each line item:
+
+1. Review:
+   - That it is the correct gage.
+2. After verifying this is the correct gage you will Click **Pick gage** to remove the gage and move to the next gage.
+
+Notes:
+
+> If that is not the gage you want you can hit next to move to the next gage on the Calibration order.
+
+---
+
+### 4. Cabinet and Drawer Guidance
+
+During Picking:
+
+- The item’s **location** is displayed at the top of the screen.
+- A **bird’s-eye view** of the drawer is shown.
+- A **cabinet view** appears in the lower-left corner.
+
+This ensures gages are picked from the correct location.
+
+---
+
+
+## Completing Picking Gages off a Calibration Order
+
+- After all line items are processed the completion screen appears.
+- Ensure **all drawers are closed**.
+- Click **OK** to return to the Open Purchase Order list.
+
+
+---
+### Option B: How to pick a gage from the Calibration order on the Dashboard
+> ***(Requires User to have Physical access to the cabinet)***
 
 ## How to Pick a Gage
 

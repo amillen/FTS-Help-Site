@@ -72,6 +72,7 @@ Click **Update Item** to save your changes.
    - Date of Last Calibration
    - Gage Status
    - Notes (optional)
+   - Attach a Certification of the gage
 3. Click **OK**.
 
 ---
