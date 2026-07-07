@@ -10,6 +10,69 @@ Receiving a gage after calibration returns it to **active inventory** and record
 **Also known as:** *Receive Calibration*, *Return Gage to Inventory*
 
 ---
+### Option A: How to Receiving a Gage from the Kiosk 
+> ***(Recommended Method)***
+
+### 1. Log In
+
+1. Sign in using the credentials assigned to you.
+2. Enter your information and click **Submit**.
+
+After logging in, you will see the **front page of your site**, where items at your station are displayed.
+
+---
+
+### 2. Open the Restock Module
+1. Click the **Restock** link.
+2. Select **View Calibration Order** appears at the top above the Open Purchase orders.
+3. Locate the correct calibration order.
+4. Click **Select** to open the Calibration OrderReceiving screen.
+
+---
+
+
+### 3. Receiving a Gages on the Calibration Order
+
+For each line item:
+
+1. Review:
+   - That it is the correct gage.
+2. After verifying this is the correct gage you will Click **Receive** to add the gage.
+1. At this screen you will be able to update the information for the gage.
+   - Date Last Calibrated
+   - Inspecation Report Findings
+   - Does it **Exceed Acceptable Tolerance**
+   - Current Status of the Gage
+
+Notes:
+
+> If that is not the gage you want you can hit next to move to the next gage on the Calibration order.
+
+---
+
+### 4. Cabinet and Drawer Guidance
+
+During Receiving:
+
+- The item’s **location** is displayed at the top of the screen.
+- A **bird’s-eye view** of the drawer is shown.
+- A **cabinet view** appears in the lower-left corner.
+
+This ensures gages are received into the correct location.
+
+---
+## Completing Receiving of Gages off a Calibration Order
+
+- After all line items are processed the completion screen appears.
+- Ensure **all drawers are closed**.
+- Click **OK** to return to the Open Purchase Order list.
+
+> ***Tip:*** You can return to the Dashboard and find the received gage and attach the calibration report to it. See **Add Gage-Specific Information** section under [Creating a Gage](xref:gaging.create).
+
+
+---
+### Option B: How to receiving a gage from the Calibration order on the Dashboard
+> ***(Requires User to have Physical access to the cabinet)***
 
 ## How to Receive a Gage After Calibration
 
@@ -66,6 +129,8 @@ In the dialog:
 - Enter the **Date Calibrated**
 - Add notes from the **Inspection Report Findings**
 - Indicate whether the gage **exceeded tolerance**
+
+> ***Tip:*** This will update the calibration date on the gage automatically
 
 ---
 

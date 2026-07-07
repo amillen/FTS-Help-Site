@@ -80,3 +80,4 @@ Yes. Categories can be used to group tools needed for a specific job, making it 
 - [Creating a New Item](xref:items.add)  
 - [Cabinets](xref:cabinets)  
 - [Stations](xref:stations)
+- [Mass Importing Categories](xref:importing-categories)

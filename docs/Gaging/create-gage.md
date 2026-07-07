@@ -72,6 +72,7 @@ Click **Update Item** to save your changes.
    - Date of Last Calibration
    - Gage Status
    - Notes (optional)
+   - Attach a Certification of the gage
 3. Click **OK**.
 
 ---
@@ -81,7 +82,17 @@ Click **Update Item** to save your changes.
 The new gage will now appear at the bottom of the item record, identified by its **serial number**, along with all associated calibration and usage information.
 
 ---
+## FAQ
 
+### Can you manually update a calibration expiration date manually on a gage?
+Yes. You can manually update the calibration expiration date from either the Gage module or the Item list.
+- In the Gage module, locate the gage from the list, select it, and open the Info tab to update the expiration date.
+- You can also locate the item from the Item list, select the Gage tab, and update the expiration date from the Info screen.
+
+### Can you convert an existing item’s type from Consumable to Gage?
+Yes. Select the item from the Item list, then change the item type from Consumable to Gage. Once updated, you will be able to enter all additional gage-related information required for the item.
+
+---
 ## Related Topics
 
 - [Items](xref:items) 
