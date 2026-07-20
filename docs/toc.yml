@@ -96,6 +96,8 @@
   items:
   - name: Network Requirements
     href: Installation/network-requirements.md
+    name: Cabinet Troubleshooting
+    href: Installation/cabinet-troubleshooting.md
 - name: Kiosk
   href: Kiosk/index.md
   items:
